@@ -7,24 +7,22 @@
 //
 
 #include <iostream>
+#include "io.hpp"
 
 int main(int argc, const char * argv[]) {
     
     int num1 = 0;
     int num2 = 0;
-    int result = 0;
     
-    std::cout << "Hello, World!\n";
+    std::cout << "Hola! " << std::endl;
     
-    std::cout << "Hola Carlos, introduce un número" << std::endl;
-    std::cin >> num1;
+    num1 = readNumber();
+
+    num2 = readNumber();
+
+    writeAnswer( num1 + num2 );
     
-    std::cout << "Ahora introduce otro número" << std::endl;
-    std::cin >> num2;
-    
-    result = num1 + num2;
-    std::cout << "El resultado de " << num1 <<" + " << num2 << " es: " << result << std::endl;
-    std::cout << "Adios!!!" << std::endl;
+    std::cout << "Adios!" << std::endl;
     
     return 0;
 }
