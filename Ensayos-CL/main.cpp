@@ -20,9 +20,9 @@ int main(int argc, const char * argv[]) {
 
     num2 = readNumber();
 
-    writeAnswer( num1 + num2 );
+    writeAnswer( num1 * num2 );
     
-    std::cout << "Adios!" << std::endl;
+    std::cout << "Oreja !!!!!" << std::endl;
     
     return 0;
 }
